@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理想生活上天猫</title>
+    <script src="/public/js/jquery-1.10.2.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+    <link rel="icon" href="/public/images/TMico.png"/>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/public/css/commonStyle.css"/>
+    <link rel="stylesheet" href="/public/css/register.css"/>
+</head>
+<body style="background:#f4f4f4">
+<div id="mallPageDiv">
+    <div class="headerDiv">
+        <div class="logoDiv">
+            <a href="/">
+                <img src="/public/images/logo.png"/>
+            </a>
+            <h2>欢迎注册</h2>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <div class="contentDiv">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">填写用户信息</h3>
+                </div>
+                <div class="panel-body">
+                    <div style="height: 30px;">
+                        <div class="alert alert-danger" id="message" style="display: none;">
+                            <strong>警告！</strong>您的网络连接有问题
+                        </div>
+                    </div>
+                    <dl>
+                        <label for="username">登录名:</label>
+                        <input type="text" id="username" class="form-control" placeholder="请输入登录名">
+                    </dl>
+                    <dl>
+                        <label for="pwd">密码:</label>
+                        <input type="password" id="pwd" class="form-control" placeholder="请输入密码，密码区分大小写">
+                    </dl>
+                    <dl>
+                        <label for="checkpwd">确认密码:</label>
+                        <input type="password" id="checkpwd" class="form-control" placeholder="请再次输入密码">
+                    </dl>
+                    <br/>
+                    <dl>
+                        <input type="button" id="btnReg" class="btn btn-danger form-control" value="确认注册">
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/public/js/self/register.js"></script>
+</body>
+</html>
